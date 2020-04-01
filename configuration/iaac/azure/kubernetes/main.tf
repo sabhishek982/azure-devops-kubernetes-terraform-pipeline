@@ -40,4 +40,8 @@ terraform {
     # key="<<env_name.k8s.tfstate>>" #OVERRIDE in TERRAFORM init
     # container_name="<<storage_account_container_name>>" #OVERRIDE in TERRAFORM init
   }
+  provider "azurerm" {
+  version         = ">= 2.0"
+  features {}
+}
 }
